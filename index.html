@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1 class="text-4xl text-center mt-20 mb-10">Welcome to <span class="text-slate-400 font-medium">Baap Er Bank!</span></h1>
+  <div class="bg-slate-200 flex flex-col max-w-screen-lg mx-auto px-14 gap-3 py-20">
+    <h1 class="text-2xl mb-5"> Please Login</h1>
+    <input type="email" placeholder="Email" name="" id="email" class="max-w-2xl h-12 rounded-md pl-4 outline-none">
+    <input type="password" placeholder="password" name="" id="password" class="max-w-2xl h-12 rounded-md outline-none pl-4">
+    <input type="submit" id="login" value="Login" class=" hover:bg-slate-700 active:bg-slate-500 cursor-pointer text-left bg-slate-600 text-white w-max py-5 px-10 rounded-md mt-5">
+    <script src="./js/login.js"></script>
+  </div>
+  <!-- MODAL -->
+  
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-xl text-red-700">Wrong email or password</h3>
+    <p class="py-4 text-red-800">Enter a valid email and password combination</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1 class="text-4xl text-center mt-20 mb-10">Welcome <span class="text-slate-400 font-medium" id="name"></span></h1>
+  <div class="bg-slate-200 rounded-md flex flex-col max-w-screen-lg mx-auto px-14 gap-3 py-20">
+    <h1 id="" class="text-2xl mb-5 text-center "> Here's Your Account</h1>
+    <div class="flex w-5/6 gap-3 mx-auto text-white text-xl">
+      <div class="w-full pl-7 py-7 rounded-md bg-stone-500">
+        <h1>Deposit</h1>
+        <p >$ <span id="deposit-amount">0</span></p>
+      </div>
+      <div class="w-full pl-7 py-7 rounded-md bg-pink-500">
+        <h1>Withdraw</h1>
+        <p >$ <span id="withdraw-amount">0</span></p>
+      </div>
+      <div class="w-full pl-7 py-7 rounded-md bg-orange-500">
+        <h1>Balance</h1>
+        <p >$ <span id="balance-amount">1200</span></p>
+      </div>
+    </div>
+    <div class="flex w-5/6 gap-3 mx-auto text-xl">
+      <div class="w-full pl-7 py-7 rounded-md bg-green-400">
+        <h1 class=" text-white">Deposit</h1>
+        <input type="number" class="mt-6 text-slate-700" name="" id="deposit">
+        <button class="btn block mt-3" id="deposit-btn">Deposit</button>
+      </div>
+      <div class="w-full pl-7 py-7 rounded-md bg-slate-400">
+        <h1 class=" text-white">Withdraw</h1>
+        <input type="number" class="mt-6" name="" id="withdraw">
+        <button class="btn block mt-3" id="withdraw-btn">Withdraw</button>
+      </div>
+    </div>
+
+    <dialog id="my_modal_2" class="modal">
+      <form method="dialog" class="modal-box">
+        <h3 class="font-bold text-xl text-red-700">Enter Appropriate Amount</h3>
+        <p class="py-4 text-red-800">the amount you entered was invalid</p>
+        <div class="modal-action">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </div>
+      </form>
+    </dialog>
+    <script src="./js/login.js"></script>
+    <script src="./js/deposit.js"></script>
+  </div>
+</body>
+</html>
